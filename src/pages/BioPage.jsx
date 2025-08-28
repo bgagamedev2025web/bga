@@ -2,48 +2,61 @@ const BioPage = () => {
   const teams = [
     {
       name: "Development Team",
+      style: "bg-blue-900/30 border-blue-700 shadow-sm",
       members: [
-        { name: "Bilal Osman", profession: "Game Developer" },
-        { name: "Evgenni Nalpin", profession: "Game Developer" },
-        { name: "Oskar Björkholm", profession: "Game Developer" },
-         { name: "Suela Kallollari", profession: "Website Developer" }
-        
-      ]
+        { name: "Bilal Osman", profession: "Game Programmer" },
+        { name: "Evgenni Nalpin", profession: "Game Programmer" },
+        { name: "Oskar Björkholm", profession: "Game Programmer" },
+        { name: "Suela Kallollari", profession: "Website Programmer" },
+      ],
     },
     {
-      name: "Art Team", 
+      name: "Art and Storytelling Team",
+      style: "bg-purple-900/30 border-purple-700 shadow-sm",
       members: [
-        { name: "", profession: "" }
-      ]
-    },
-    {
-      name: "Storytelling Team",
-      members: [
-        { name: "", profession: "" }
-      ]
+        { name: "Maria", profession: "Artist" },
+        { name: "Patricia", profession: "Artist" },
+        { name: "Wilma", profession: "Artist" },
+        { name: "Yoanna", profession: "Artist" },
+      ],
     },
     {
       name: "Musicians Team",
+      style: "bg-green-900/30 border-green-700 shadow-sm",
       members: [
-        { name: "", profession: "" }
-      ]
-    }
+        { name: "Albert", profession: "Musician" },
+        { name: "Marika", profession: "Musician" },
+      ],
+    },
   ];
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Bio Data</h2>
-      <p className="text-gray-600 mb-8">This page contains career background information.</p>
+      <h2 className="text-2xl font-bold mb-4 text-white">Our Team</h2>
+      <p className="text-gray-300 mb-8">
+        Meet the people who bring creativity and code together to make our game.
+      </p>
 
-      <div className="space-y-8">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
         {teams.map((team, index) => (
-          <div key={index} className="bg-white rounded-lg border p-6">
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">{team.name}</h3>
+          <div
+            key={index}
+            className={`rounded-xl p-6 border ${team.style} hover:shadow-md transition`}
+          >
+            <h3 className="text-lg font-semibold text-white mb-4">
+              {team.name}
+            </h3>
+
             <div className="space-y-3">
               {team.members.map((member, memberIndex) => (
-                <div key={memberIndex} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0">
-                  <span className="font-medium">{member.name}</span>
-                  <span className="text-gray-600 text-sm">{member.profession}</span>
+                <div
+                  key={memberIndex}
+                  className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm"
+                >
+                  <p className="font-medium text-gray-900 text-sm">
+                    {member.name}
+                  </p>
+                  <p className="text-gray-600 text-xs">{member.profession}</p>
                 </div>
               ))}
             </div>

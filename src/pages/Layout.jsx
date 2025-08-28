@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router';
-import Header from '../components/Header.jsx';
+//import Header from '../components/Header.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 
@@ -11,7 +11,7 @@ const Layout = ({ user, setUser }) => {
 
      
       <div className="relative flex flex-col min-h-screen">
-        <Header />
+        {/*<Header />*/}
         <Navbar user={user} setUser={setUser} />
         <main className="flex-grow">
           <Outlet />
