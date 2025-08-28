@@ -7,7 +7,7 @@ const Layout = ({ user, setUser }) => {
   return (
     <div className="min-h-screen flex flex-col relative">
      
-      <div className="absolute inset-0 bg-[url('./assets/background.jpg')] bg-fixed bg-cover opacity-75"></div>
+      <div className="absolute inset-0 bg-[url('./assets/bck2.png')] bg-fixed bg-cover opacity-90"></div>
 
      
       <div className="relative flex flex-col min-h-screen">

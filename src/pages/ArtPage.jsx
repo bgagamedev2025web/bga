@@ -3,7 +3,7 @@ const ArtPage = () => {
     <div className="max-w-6xl mx-auto p-6">
       <h2 className="text-3xl font-bold mb-4 text-center">Game Artwork</h2>
       <p className="text-center mb-8 text-gray-700">
-        A collection of artwork and designs created for the Finnish Kalevala Game Project.
+        A collection of artwork and designs created for the Shroud Game Project.
       </p>
 
       
