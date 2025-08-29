@@ -14,18 +14,19 @@ const BioPage = () => {
       name: "Art and Narrative Team",
       style: "bg-purple-900/30 border-purple-700 shadow-sm",
       members: [
-        { name: "Maria", profession: "Artist" },
-        { name: "Patricia", profession: "Artist" },
-        { name: "Wilma", profession: "Artist" },
-        { name: "Yoanna", profession: "Artist" },
+        { name: "Maria Molander", profession: "Artist" },
+        { name: "Patricia Adolfsson", profession: "Artist" },
+        { name: "Wilma Kuusimurto", profession: "Artist" },
+        { name: "Yoanna Rönnqvist", profession: "Artist" },
+        { name: "Joakim Bäck", profession: "Artist" },
       ],
     },
     {
       name: "Musicians Team",
       style: "bg-green-900/30 border-green-700 shadow-sm",
       members: [
-        { name: "Albert", profession: "Musician" },
-        { name: "Marika", profession: "Musician" },
+        { name: "Albert Nyberg", profession: "Musician" },
+        { name: "Marika Durando", profession: "Musician" },
       ],
     },
   ];
