@@ -11,7 +11,7 @@ const BioPage = () => {
       ],
     },
     {
-      name: "Art and Storytelling Team",
+      name: "Art and Narrative Team",
       style: "bg-purple-900/30 border-purple-700 shadow-sm",
       members: [
         { name: "Maria", profession: "Artist" },
