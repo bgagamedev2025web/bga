@@ -40,6 +40,14 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="/login"
+              className="text-gray-300 hover:text-white transition font-medium"
+            >
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/contact"
               className="text-gray-300 hover:text-white transition font-medium"
             >
